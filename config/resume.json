@@ -1,0 +1,49 @@
+{
+    "name": "Jon Snow",
+    "email": [ "jon.snow@gmail.com", "jsnow123@hotmail.com" ],
+    "phone": "+1 (206) 123-4567",
+    "skills": {
+        "technical": [
+            "Master Longswordsman",
+            "Archer"
+        ],
+        "personal": [
+            "Bastard Child",
+            "Epic Teenage-Angst Long Hair"
+        ],
+        "Languages": [
+            "Northmen",
+            "The Others",
+            "Free Men",
+            "Dornish",
+            "Valyrian",
+            "Spanish"
+        ]
+    },
+    "work_history": [
+        {
+            "company": "Castle Black",
+            "title": "Night's Watchmen",
+            "start_date": "June 2001",
+            "end_date": "Present",
+            "responsibilities": [
+                "Kill the undead",
+                "Protect the wall",
+                "Groom for command"
+            ],
+            "tags": [ "Sword", "Bow", "The Others", "Castle Black", "Leader" ]
+        },
+        {
+            "company": "Winterfell",
+            "title": "Bastard",
+            "start_date": "May 1992",
+            "end_date": "September 1999",
+            "responsibilities": [
+                "Stay out of the way",
+                "Learn from the Starks",
+                "Play with swords and bows"
+            ],
+            "tags": [ "Training", "Swords", "Starks" ]
+        }
+    ]
+}
