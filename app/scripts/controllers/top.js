@@ -112,6 +112,7 @@ angular.module('personalSiteApp.top', ['ngRoute'])
             material,
             containerWidth,
             containerHeight;
+
         container = document.getElementById('three-container');
         containerWrapper = $(container);
         containerWidth = parseInt(containerWrapper.css('width'));

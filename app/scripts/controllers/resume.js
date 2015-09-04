@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('personalSiteApp.resume', ['ngRoute'])
-.controller('ResumeController', [ '$scope', '$http',  '_', function($scope, $http, _) {
+.controller('ResumeController', [ '$scope', '$http',  '_', '$timeout', function($scope, $http, _, $timeout) {
     $http.get('data/resumeData.json').success(function(response){
+        var load_screen = $("#load_screen");
         $scope.resumeData =  response;
         $scope.skillList = {};
 
@@ -71,5 +72,10 @@ angular.module('personalSiteApp.resume', ['ngRoute'])
                 return skill.name;
             }).join(', ');
         });
+
+        load_screen.addClass("loaded");
+        $timeout(function() {
+            load_screen.remove();
+        }, 3000);
     });
 }]);
