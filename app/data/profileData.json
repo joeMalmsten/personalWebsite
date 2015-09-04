@@ -1,0 +1,68 @@
+{
+    "name": "Joseph Malmsten",
+    "email": "joseph.malmsten@gmail.com",
+    "phone": "(425)-516-2972",
+    "location": "Redmond, WA",
+    "photoSrc": "images/ProfilePhoto.png",
+    "baseSkills": [
+        "C++ Programmer",
+        "C# Programmer",
+        "Full Stack Developer"
+    ],
+    "professional": [
+        "I'm a Seattle-based software engineer. I have worked in many mediums including games, mobile apps, and full stack web development. I can work anywhere in Seattle or Eastside and I have no issue working remotely for clients from anywhere in the world.",
+        "My skill set is fairly diverse, ranging from C++ game development and debugging, working in backend PHP and Java code, front-end work in AngularJS and Backbone, and SQL experience in Oracle, PostresSQL, MongoDB, and MySQL. A full set of skills is listed on my resume at the bottom of the page."
+    ],
+    "social": {
+        "facebook": "https://www.facebook.com/joe.malmsten",
+        "github": "https://github.com/joeMalmsten/",
+        "linkedIn": "https://www.linkedin.com/pub/joseph-malmsten/41/73a/97a"
+    },
+    "skillSet": [
+        {
+            "name": "C / C++",
+            "skillBlocks": [
+                true,
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "name": "JAVASCRIPT",
+            "skillBlocks": [
+                true,
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "name": "C#",
+            "skillBlocks": [
+                true,
+                true,
+                false,
+                false
+            ]
+        },
+        {
+            "name": "HTML / CSS3 / SASS / LESS",
+            "skillBlocks": [
+                true,
+                true,
+                true,
+                true
+            ]
+        },
+        {
+            "name": "PHP / JAVA",
+            "skillBlocks": [
+                true,
+                true,
+                false,
+                false
+            ]
+        }
+    ]
+}

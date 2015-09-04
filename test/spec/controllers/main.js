@@ -1,23 +1,26 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+describe('Controller: MainController', function () {
 
-  // load the controller's module
-  beforeEach(module('personalSiteApp'));
+    // load the controller's module
+    beforeEach(module('personalSiteApp'));
 
-  var MainCtrl,
+    var MainCtrl,
     scope;
 
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
-      $scope: scope
-      // place here mocked dependencies
+    // Initialize the controller and a mock scope
+    beforeEach(inject(function ($controller, $rootScope) {
+        scope = $rootScope.$new();
+        MainCtrl = $controller('MainController', {
+            $scope: scope
+    // place here mocked dependencies
     });
-  }));
+    }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
-  });
+    it('should attach an object containing page template to the scope', function () {
+        expect(scope.template.top).toBeDefined();
+        expect(scope.template.history).toBeDefined();
+        expect(scope.template.resume).toBeDefined();
+        expect(scope.template.profile).toBeDefined();
+    });
 });

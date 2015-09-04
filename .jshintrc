@@ -10,7 +10,12 @@
   "strict": true,
   "undef": true,
   "unused": true,
-  "globals": {
-    "angular": false
+  "predef": {
+    "angular": false,
+    "$": false,
+    "WOW": false,
+    "THREE": false,
+    "dat": false,
+    "_": false
   }
 }

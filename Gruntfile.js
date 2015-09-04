@@ -124,12 +124,11 @@ module.exports = function (grunt) {
         jshintrc: '.jshintrc',
         reporter: require('jshint-stylish')
       },
-      all: {
-        src: [
-          'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
-        ]
-      },
+      all:  [
+        'Gruntfile.js',
+        '<%= yeoman.app %>/scripts/{,*/}*.js',
+        '!<%= yeoman.app %>/scripts/vendor/**'
+      ],
       test: {
         options: {
           jshintrc: 'test/.jshintrc'
@@ -242,7 +241,6 @@ module.exports = function (grunt) {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
           '<%= yeoman.dist %>/styles/{,*/}*.css',
-          '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           '<%= yeoman.dist %>/styles/fonts/*'
         ]
       }
@@ -395,17 +393,37 @@ module.exports = function (grunt) {
             '.htaccess',
             '*.html',
             'images/{,*/}*.{webp}',
-            'styles/fonts/{,*/}*.*'
+            'fonts/{,*/}*.*'
           ]
         }, {
           expand: true,
-          cwd: '.tmp/images',
+          cwd: '<%= yeoman.app %>/images',
           dest: '<%= yeoman.dist %>/images',
-          src: ['generated/*']
+          src: ['*.png']
+        }, {
+          expand: true,
+          cwd: '<%= yeoman.app %>/views',
+          dest: '<%= yeoman.dist %>/views',
+          src: ['*.html']
+        }, {
+          expand: true,
+          cwd: '<%= yeoman.app %>/fonts',
+          dest: '<%= yeoman.dist %>/fonts',
+          src: ['**']
+        },  {
+          expand: true,
+          cwd: '<%= yeoman.app %>/data',
+          dest: '<%= yeoman.dist %>/data',
+          src: ['**']
+        },  {
+          expand: true,
+          cwd: '<%= yeoman.app %>/styles',
+          dest: '<%= yeoman.dist %>/styles',
+          src: ['*.css']
         }, {
           expand: true,
           cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
+          src: 'bower_components/bootstrap-sass-official/fonts/bootstrap/*',
           dest: '<%= yeoman.dist %>'
         }]
       },
